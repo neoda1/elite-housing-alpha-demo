@@ -237,3 +237,21 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
+.top-site-header-menu{
+	background-color:rgba(0,0,0,0.6);
+	z-index:1;
+}
+.top-site-header-menu-text{
+	color:#fff;
+	height:58px;
+	padding: 16px 0px;
+}
+
+.home-options .home-options-row{
+	background-color: rgba(0,0,0,0.3);
+}
+
+.home-options .service-item{
+	margin-top:20px;
+}
