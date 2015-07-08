@@ -36,11 +36,31 @@
 	<nav class="navbar navbar-fixed-top top-site-header-menu">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-10">
-					<div class="top-site-header-menu-text">
-						Elite - Housing
+				<div class="col-md-2 div-table-layout">
+					<div class="top-site-header-menu-text div-table-v-align-middle">
+						<a data-target="#carousel-example-generic" data-slide-to="0" href="#">Elite - Housing </a>
 				  </div>
+                </div>
+                  <!-- Single button -->
+                    <div class="col-md-10 div-table-layout">
+                
+                        <div class="btn-group top-site-header-menu-text div-table-v-align-middle">
+                          <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#" data-target="#carousel-example-generic" data-slide-to="1">Joint Venture</a></li>
+                            <li><a href="#" data-target="#carousel-example-generic" data-slide-to="2">Rent</a></li>
+                            <li><a href="#" data-target="#carousel-example-generic" data-slide-to="3">Buy</a></li>
+                            <li><a href="#" data-target="#carousel-example-generic" data-slide-to="4">Sell</a></li>
+                            
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#services">Services Overview</a></li>
+                          </ul>
+                        </div>
+                    </div>
 				</div>
+
 			</div>
 		</div>
 	</nav>
@@ -57,7 +77,7 @@
             <li>
                 <a href="#services" onclick = $("#menu-close").click(); >Services</a>
             </li>
-			<li>
+            <li>
                 <a href="#about" onclick = $("#menu-close").click(); >About</a>
             </li>
             <li>
@@ -71,80 +91,369 @@
 
     <!-- Header -->
     <header id="top" class="header">
-		<div class="text-vertical-center">
-            <h1>elite Housing</h1>
-            <h3>Finding your next home - simplified</h3>
-            <br>
-            <a href="#services" class="btn btn-dark btn-lg">Find Out More</a>
-			<hr class="small">
-			<div class="container home-options">
-            <div class="row text-center home-options-row">
-                <div class="col-lg-10 col-lg-offset-1">
-                    
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                               <a href="#" class="btn btn-primary">
-							   <span class="fa-stack fa-2x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span> </a>
-                                <h4>
-                                    <strong>Rent Property</strong>
-                                </h4>
+
+        <div id="carousel-example-generic" class="carousel slide">
+            <!-- Indicators -->
+              <ol class="carousel-indicators hidden">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  	<div class="text-vertical-center">
+                        <h1>elite Housing</h1>
+                        <h3>Finding your next home - simplified</h3>
+                        <br>
+                        <a href="#services" class="btn btn-dark btn-lg">Find Out More</a>
+            			<hr class="small">
+            			<div class="container home-options">
+                        <div class="row text-center ">
+                            <div class="col-lg-8 col-lg-offset-2 home-options-row">
+                                
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="service-item">
+                                            <a href="#" data-target="#carousel-example-generic" data-slide-to="1" class="btn btn-primary">
+                                                <span class="fa-stack fa-2x">
+                                                <i class="fa fa-circle fa-stack-2x"></i>
+                                                <i class="fa fa-university fa-stack-1x text-primary"></i>
+                                                </span>
+                                            </a>
+                                            <h4>
+                                                <strong>Joint Venture</strong>
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="service-item">
+                                           <a href="#" data-target="#carousel-example-generic" data-slide-to="2" class="btn btn-primary">
+            							   <span class="fa-stack fa-2x">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                        </span> </a>
+                                            <h4>
+                                                <strong>Rent Property</strong>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="service-item">
+            							<a href="#" data-target="#carousel-example-generic" data-slide-to="3" class="btn btn-primary">
+                                            <span class="fa-stack fa-2x">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-home fa-stack-1x text-primary"></i>
+                                        </span>
+            							</a>
+                                            <h4>
+                                                <strong>Buy Property</strong>
+                                            </h4>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="service-item">
+                                            <a href="#" data-target="#carousel-example-generic" data-slide-to="4" class="btn btn-primary">
+            									<span class="fa-stack fa-2x">
+            										<i class="fa fa-circle fa-stack-2x"></i>
+            										<i class="fa fa-building-o fa-stack-1x text-primary"></i>
+            									</span>
+            								</a>
+                                            <h4>
+                                                <strong>Sell Property</strong>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- /.row (nested) -->
                             </div>
+                            <!-- /.col-lg-10 -->
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-							<a href="#" class="btn btn-primary">
-                                <span class="fa-stack fa-2x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-home fa-stack-1x text-primary"></i>
-                            </span>
-							</a>
-                                <h4>
-                                    <strong>Buy Property</strong>
-                                </h4>
-                        </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <a href="#" class="btn btn-primary">
-									<span class="fa-stack fa-2x">
-										<i class="fa fa-circle fa-stack-2x"></i>
-										<i class="fa fa-building-o fa-stack-1x text-primary"></i>
-									</span>
-								</a>
-                                <h4>
-                                    <strong>Sell Property</strong>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-								<a href="#" class="btn btn-primary">
-									<span class="fa-stack fa-2x">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-university fa-stack-1x text-primary"></i>
-									</span>
-								</a>
-                                <h4>
-                                    <strong>Join Venture</strong>
-                                </h4>
-                            </div>
-                        </div>
+                        <!-- /.row -->
                     </div>
-                    <!-- /.row (nested) -->
+            		
+            		</div>
+                  
                 </div>
-                <!-- /.col-lg-10 -->
+                
+                <div class="item">
+                    <div class="text-vertical-center">
+                        <h1>elite Joint Venture</h1>
+                        <h3>Joint Venture - simplified</h3>
+                        <br>
+                        <a href="#" data-toggle="modal" data-target="#jointVentureModal" class="btn btn-dark btn-lg">Find Out More</a>
+                        <hr class="small">
+                        <div class="container home-options">
+                        <div class="row text-center">
+                            <div class="col-lg-6 col-lg-offset-3 home-options-row">
+                                
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="service-item">
+                                           <a href="#" data-toggle="modal" data-target="#jointVentureModal"  class="btn btn-primary">
+                                           <span class="fa-stack fa-2x">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                        </span> </a>
+                                            <h4>
+                                                <strong>Property</strong>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="service-item">
+                                        <a  href="#" data-toggle="modal" data-target="#jointVentureModal"  class="btn btn-primary">
+                                            <span class="fa-stack fa-2x">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-home fa-stack-1x text-primary"></i>
+                                        </span>
+                                        </a>
+                                            <h4>
+                                                <strong>Farm</strong>
+                                            </h4>
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- /.row (nested) -->
+                            </div>
+                            <!-- /.col-lg-10 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="text-vertical-center">
+                        <h1>Rent Property</h1>
+                        <h3>Renting a property - simplified</h3>
+                        <br>
+                        <a href="#" data-toggle="modal" data-target="#jointVentureModal" class="btn btn-dark btn-lg">Find Out More</a>
+                        <hr class="small">
+                        <div class="container home-options">
+                        <div class="row text-center">
+                            <div class="col-lg-6 col-lg-offset-3 home-options-row">
+                                
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="service-item">
+                                           <a href="#" class="btn btn-primary">
+                                           <span class="fa-stack fa-2x">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                        </span> </a>
+                                            <h4>
+                                                <strong>Property</strong>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="service-item">
+                                           <a href="#" class="btn btn-primary">
+                                           <span class="fa-stack fa-2x">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                        </span> </a>
+                                            <h4>
+                                                <strong>Paying Guest</strong>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.row (nested) -->
+                            </div>
+                            <!-- /.col-lg-10 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="text-vertical-center">
+                        <h1>Buy Property</h1>
+                        <h3>Buying a property - simplified</h3>
+                        <br>
+                        <a href="#" data-toggle="modal" data-target="#jointVentureModal" class="btn btn-dark btn-lg">Find Out More</a>
+                        <hr class="small">
+                        <div class="container home-options">
+                        <div class="row text-center">
+                            <div class="col-lg-6 col-lg-offset-3 home-options-row">
+                                
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="service-item">
+                                           <a href="#" class="btn btn-primary">
+                                           <span class="fa-stack fa-2x">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                        </span> </a>
+                                            <h4>
+                                                <strong>Property</strong>
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="service-item">
+                                           <a href="#" class="btn btn-primary">
+                                           <span class="fa-stack fa-2x">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                        </span> </a>
+                                            <h4>
+                                                <strong>Farm</strong>
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- /.row (nested) -->
+                            </div>
+                            <!-- /.col-lg-10 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="text-vertical-center">
+                        <h1>Sell Property</h1>
+                        <h3>Selling a property - simplified</h3>
+                        <br>
+                        <a href="#" data-toggle="modal" data-target="#jointVentureModal" class="btn btn-dark btn-lg">Find Out More</a>
+                        <hr class="small">
+                        <div class="container home-options">
+                        <div class="row text-center">
+                            <div class="col-lg-6 col-lg-offset-3 home-options-row">
+                                
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="service-item">
+                                           <a href="#" class="btn btn-primary">
+                                           <span class="fa-stack fa-2x">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                        </span> </a>
+                                            <h4>
+                                                <strong>Property</strong>
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="service-item">
+                                           <a href="#" class="btn btn-primary">
+                                           <span class="fa-stack fa-2x">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                        </span> </a>
+                                            <h4>
+                                                <strong>Farm</strong>
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- /.row (nested) -->
+                            </div>
+                            <!-- /.col-lg-10 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    </div>
+                </div>
+
+              </div>
+
+              
             </div>
-            <!-- /.row -->
-        </div>
-		
-		</div>
+
+
+
+
     </header>
 
-    
+    <!-- Modal -->
+    <div class="modal fade" id="jointVentureModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Joint Venture </h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+
+
+            <div class="form-group">
+                <label for="JointVentureType" class="col-sm-2 control-label">Type</label>
+                <div class="col-sm-10">
+                    <select id="JointVentureType" class="form-control">
+                      <option>Property</option>
+                      <option>Farm</option>
+                    </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Sekect City</label>
+                <div class="col-sm-10">
+                    <select class="form-control">
+                      <option>Bangalore</option>
+                      <option>Pune</option>
+                      <option>Hyderabad</option>
+                      <option>Delhi</option>
+                      <option>Chandigarh</option>
+                    </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="Address" class="col-sm-2 control-label">Address</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" rows="3" id="Address" placeholder="Address"></textarea>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="Name" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="Name" placeholder="Name">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="Phone" class="col-sm-2 control-label">Phone</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="Phone" placeholder="Phone">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+              </div>
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Joint Venture Now!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <section id="services" class="services bg-primary">
@@ -154,6 +463,21 @@
                     <h2>Our Services</h2>
                     <hr class="small">
                     <div class="row">
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-university fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Joint Venture</strong>
+                                </h4>
+                                <p>Register for Joint venture.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
@@ -163,7 +487,7 @@
                                 <h4>
                                     <strong>Rent Property</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. You know what I mean right!</p>
+                                <p> Renting a property </p>
                                 <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
@@ -176,7 +500,7 @@
                                 <h4>
                                     <strong>Buy Property</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <p> Buying a property. </p>
                                 <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
@@ -189,20 +513,7 @@
                                 <h4>
                                     <strong>Sell Property</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-university fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Join Venture</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <p> Want to sell a property ? </p>
                                 <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>

@@ -245,7 +245,6 @@ footer {
 .top-site-header-menu-text{
 	color:#fff;
 	height:58px;
-	padding: 16px 0px;
 }
 
 .home-options .home-options-row{
@@ -253,5 +252,23 @@ footer {
 }
 
 .home-options .service-item{
-	margin-top:20px;
+	margin-top:40px;
+}
+
+.div-table-layout{
+    display: table;
+}
+
+.div-table-layout .div-table-v-align-middle{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bg-img-jointventure{
+    background: url(../img/jointVenture.jpg) no-repeat center center scroll;
+    background-size: 100% 100%;
+}
+
+#carousel-example-generic{
+    height:100%;
 }
