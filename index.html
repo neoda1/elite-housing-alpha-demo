@@ -104,47 +104,44 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="javascript:void(0)">Elite Housing</a>
+            <a class="navbar-brand" href="#top" class="home-link">Elite Housing</a>
         </div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="javascript:void(0)">Joint Venture</a></li>
-                <li class="dropdown">
-                    <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <li class="dropdown active main-menu-dd">
+                    <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown"><span class="toggle-text">Joint Venture</span> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="#" data-target="#carousel-example-generic" data-slide-to="1">Joint Venture</a></li>
                         <li><a href="#" data-target="#carousel-example-generic" data-slide-to="2">Rent</a></li>
                         <li><a href="#" data-target="#carousel-example-generic" data-slide-to="3">Buy</a></li>
                         <li><a href="#" data-target="#carousel-example-generic" data-slide-to="4">Sell</a></li>
-                        
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#services">Services Overview</a></li>
                   </ul>
                 </li>
             </ul>
-            <form class="navbar-form navbar-left">
-                <input type="text" class="form-control col-lg-8" placeholder="Search">
-            </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="javascript:void(0)">Link</a></li>
+                <li>
+                    <form class="navbar-form navbar-left">
+                        <input type="text" class="form-control col-lg-8" placeholder="Search">
+                    </form>
+                </li>
                 <li class="dropdown">
-                    <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+                            <a href="#top">Home</a>
                         </li>
                         <li>
-                            <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+                            <a href="#services"  >Services</a>
                         </li>
                         <li>
-                            <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+                            <a href="#portfolio"  >Portfolio</a>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="#about" onclick = $("#menu-close").click(); >About</a>
+                            <a href="#about"  >About</a>
                         </li>
                         <li>
-                            <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+                            <a href="#contact"  >Contact</a>
                         </li>    
                     </ul>
                 </li>
@@ -727,6 +724,8 @@
     <script>
       $.material.init();
     </script>
+    <!-- Custome Javascript -->
+    <script src="js/custom.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script>
