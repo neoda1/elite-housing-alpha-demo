@@ -238,9 +238,8 @@ footer {
     padding: 100px 0;
 }
 
-.top-site-header-menu{
-	background-color:rgba(0,0,0,0.6);
-	z-index:1;
+#top.header{
+	padding-top: 60px;
 }
 .top-site-header-menu-text{
 	color:#fff;

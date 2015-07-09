@@ -14,6 +14,12 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Material Design CSS -->
+    <link href="css/materialdesign/material.min.css" rel="stylesheet">
+    <link href="css/materialdesign/material.min.css.map" rel="stylesheet">
+    <link href="css/materialdesign/roboto.css" rel="stylesheet">
+    <link href="css/materialdesign/ripples.min.css" rel="stylesheet">
+    
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
 
@@ -33,6 +39,7 @@
 <body>
 
     <!-- Navigation -->
+<!--
 	<nav class="navbar navbar-fixed-top top-site-header-menu">
 		<div class="container-fluid">
 			<div class="row">
@@ -41,7 +48,7 @@
 						<a data-target="#carousel-example-generic" data-slide-to="0" href="#">Elite - Housing </a>
 				  </div>
                 </div>
-                  <!-- Single button -->
+                  < !-- Single button -- 
                     <div class="col-md-10 div-table-layout">
                 
                         <div class="btn-group top-site-header-menu-text div-table-v-align-middle">
@@ -64,10 +71,10 @@
 			</div>
 		</div>
 	</nav>
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <a id="menu-toggle" href="#" class="btn btn-info btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <a id="menu-close" href="#" class="btn btn-inverse btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
                 <a href="#top"  onclick = $("#menu-close").click(); >elite Housing</a>
             </li>
@@ -87,7 +94,64 @@
                 <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
             </li>
         </ul>
-    </nav>
+    </nav> 
+-->
+
+    <div class="navbar navbar-info navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="javascript:void(0)">Elite Housing</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="javascript:void(0)">Joint Venture</a></li>
+                <li class="dropdown">
+                    <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" data-target="#carousel-example-generic" data-slide-to="1">Joint Venture</a></li>
+                        <li><a href="#" data-target="#carousel-example-generic" data-slide-to="2">Rent</a></li>
+                        <li><a href="#" data-target="#carousel-example-generic" data-slide-to="3">Buy</a></li>
+                        <li><a href="#" data-target="#carousel-example-generic" data-slide-to="4">Sell</a></li>
+                        
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#services">Services Overview</a></li>
+                  </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <input type="text" class="form-control col-lg-8" placeholder="Search">
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="javascript:void(0)">Link</a></li>
+                <li class="dropdown">
+                    <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+                        </li>
+                        <li>
+                            <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#about" onclick = $("#menu-close").click(); >About</a>
+                        </li>
+                        <li>
+                            <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+                        </li>    
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
 
     <!-- Header -->
     <header id="top" class="header">
@@ -109,7 +173,7 @@
                         <h1>elite Housing</h1>
                         <h3>Finding your next home - simplified</h3>
                         <br>
-                        <a href="#services" class="btn btn-dark btn-lg">Find Out More</a>
+                        <a href="#services" class="btn btn-inverse btn-lg">Find Out More</a>
             			<hr class="small">
             			<div class="container home-options">
                         <div class="row text-center ">
@@ -118,10 +182,10 @@
                                 <div class="row">
                                     <div class="col-md-3 col-sm-6">
                                         <div class="service-item">
-                                            <a href="#" data-target="#carousel-example-generic" data-slide-to="1" class="btn btn-primary">
+                                            <a href="#" data-target="#carousel-example-generic" data-slide-to="1" class="btn btn-info">
                                                 <span class="fa-stack fa-2x">
                                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                                <i class="fa fa-university fa-stack-1x text-primary"></i>
+                                                <i class="fa fa-university fa-stack-1x text-info"></i>
                                                 </span>
                                             </a>
                                             <h4>
@@ -132,10 +196,10 @@
 
                                     <div class="col-md-3 col-sm-6">
                                         <div class="service-item">
-                                           <a href="#" data-target="#carousel-example-generic" data-slide-to="2" class="btn btn-primary">
+                                           <a href="#" data-target="#carousel-example-generic" data-slide-to="2" class="btn btn-info">
             							   <span class="fa-stack fa-2x">
                                             <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                            <i class="fa fa-cloud fa-stack-1x text-info"></i>
                                         </span> </a>
                                             <h4>
                                                 <strong>Rent Property</strong>
@@ -144,10 +208,10 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="service-item">
-            							<a href="#" data-target="#carousel-example-generic" data-slide-to="3" class="btn btn-primary">
+            							<a href="#" data-target="#carousel-example-generic" data-slide-to="3" class="btn btn-info">
                                             <span class="fa-stack fa-2x">
                                             <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-home fa-stack-1x text-primary"></i>
+                                            <i class="fa fa-home fa-stack-1x text-info"></i>
                                         </span>
             							</a>
                                             <h4>
@@ -157,10 +221,10 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="service-item">
-                                            <a href="#" data-target="#carousel-example-generic" data-slide-to="4" class="btn btn-primary">
+                                            <a href="#" data-target="#carousel-example-generic" data-slide-to="4" class="btn btn-info">
             									<span class="fa-stack fa-2x">
             										<i class="fa fa-circle fa-stack-2x"></i>
-            										<i class="fa fa-building-o fa-stack-1x text-primary"></i>
+            										<i class="fa fa-building-o fa-stack-1x text-info"></i>
             									</span>
             								</a>
                                             <h4>
@@ -186,7 +250,7 @@
                         <h1>elite Joint Venture</h1>
                         <h3>Joint Venture - simplified</h3>
                         <br>
-                        <a href="#" data-toggle="modal" data-target="#jointVentureModal" class="btn btn-dark btn-lg">Find Out More</a>
+                        <a href="#" data-toggle="modal" data-target="#jointVentureModal" class="btn btn-inverse btn-lg">Find Out More</a>
                         <hr class="small">
                         <div class="container home-options">
                         <div class="row text-center">
@@ -195,10 +259,10 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6">
                                         <div class="service-item">
-                                           <a href="#" data-toggle="modal" data-target="#jointVentureModal"  class="btn btn-primary">
+                                           <a href="#" data-toggle="modal" data-target="#jointVentureModal"  class="btn btn-info">
                                            <span class="fa-stack fa-2x">
                                             <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                            <i class="fa fa-cloud fa-stack-1x text-info"></i>
                                         </span> </a>
                                             <h4>
                                                 <strong>Property</strong>
@@ -207,10 +271,10 @@
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <div class="service-item">
-                                        <a  href="#" data-toggle="modal" data-target="#jointVentureModal"  class="btn btn-primary">
+                                        <a  href="#" data-toggle="modal" data-target="#jointVentureModal"  class="btn btn-info">
                                             <span class="fa-stack fa-2x">
                                             <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-home fa-stack-1x text-primary"></i>
+                                            <i class="fa fa-home fa-stack-1x text-info"></i>
                                         </span>
                                         </a>
                                             <h4>
@@ -233,7 +297,7 @@
                         <h1>Rent Property</h1>
                         <h3>Renting a property - simplified</h3>
                         <br>
-                        <a href="#" data-toggle="modal" data-target="#jointVentureModal" class="btn btn-dark btn-lg">Find Out More</a>
+                        <a href="#" data-toggle="modal" data-target="#jointVentureModal" class="btn btn-inverse btn-lg">Find Out More</a>
                         <hr class="small">
                         <div class="container home-options">
                         <div class="row text-center">
@@ -242,10 +306,10 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6">
                                         <div class="service-item">
-                                           <a href="#" class="btn btn-primary">
+                                           <a href="#" class="btn btn-info">
                                            <span class="fa-stack fa-2x">
                                             <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                            <i class="fa fa-cloud fa-stack-1x text-info"></i>
                                         </span> </a>
                                             <h4>
                                                 <strong>Property</strong>
@@ -254,10 +318,10 @@
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <div class="service-item">
-                                           <a href="#" class="btn btn-primary">
+                                           <a href="#" class="btn btn-info">
                                            <span class="fa-stack fa-2x">
                                             <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                            <i class="fa fa-cloud fa-stack-1x text-info"></i>
                                         </span> </a>
                                             <h4>
                                                 <strong>Paying Guest</strong>
@@ -279,7 +343,7 @@
                         <h1>Buy Property</h1>
                         <h3>Buying a property - simplified</h3>
                         <br>
-                        <a href="#" data-toggle="modal" data-target="#jointVentureModal" class="btn btn-dark btn-lg">Find Out More</a>
+                        <a href="#" data-toggle="modal" data-target="#jointVentureModal" class="btn btn-inverse btn-lg">Find Out More</a>
                         <hr class="small">
                         <div class="container home-options">
                         <div class="row text-center">
@@ -288,10 +352,10 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6">
                                         <div class="service-item">
-                                           <a href="#" class="btn btn-primary">
+                                           <a href="#" class="btn btn-info">
                                            <span class="fa-stack fa-2x">
                                             <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                            <i class="fa fa-cloud fa-stack-1x text-info"></i>
                                         </span> </a>
                                             <h4>
                                                 <strong>Property</strong>
@@ -301,10 +365,10 @@
 
                                     <div class="col-md-6 col-sm-6">
                                         <div class="service-item">
-                                           <a href="#" class="btn btn-primary">
+                                           <a href="#" class="btn btn-info">
                                            <span class="fa-stack fa-2x">
                                             <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                            <i class="fa fa-cloud fa-stack-1x text-info"></i>
                                         </span> </a>
                                             <h4>
                                                 <strong>Farm</strong>
@@ -327,7 +391,7 @@
                         <h1>Sell Property</h1>
                         <h3>Selling a property - simplified</h3>
                         <br>
-                        <a href="#" data-toggle="modal" data-target="#jointVentureModal" class="btn btn-dark btn-lg">Find Out More</a>
+                        <a href="#" data-toggle="modal" data-target="#jointVentureModal" class="btn btn-inverse btn-lg">Find Out More</a>
                         <hr class="small">
                         <div class="container home-options">
                         <div class="row text-center">
@@ -336,10 +400,10 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6">
                                         <div class="service-item">
-                                           <a href="#" class="btn btn-primary">
+                                           <a href="#" class="btn btn-info">
                                            <span class="fa-stack fa-2x">
                                             <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                            <i class="fa fa-cloud fa-stack-1x text-info"></i>
                                         </span> </a>
                                             <h4>
                                                 <strong>Property</strong>
@@ -349,10 +413,10 @@
 
                                     <div class="col-md-6 col-sm-6">
                                         <div class="service-item">
-                                           <a href="#" class="btn btn-primary">
+                                           <a href="#" class="btn btn-info">
                                            <span class="fa-stack fa-2x">
                                             <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                            <i class="fa fa-cloud fa-stack-1x text-info"></i>
                                         </span> </a>
                                             <h4>
                                                 <strong>Farm</strong>
@@ -446,8 +510,8 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            <button type="button" class="btn btn-primary">Joint Venture Now!</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-info">Joint Venture Now!</button>
           </div>
         </div>
       </div>
@@ -468,13 +532,13 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-university fa-stack-1x text-primary"></i>
+                                <i class="fa fa-university fa-stack-1x text-info"></i>
                             </span>
                                 <h4>
                                     <strong>Joint Venture</strong>
                                 </h4>
                                 <p>Register for Joint venture.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <a href="#" class="btn btn-inverse">Learn More</a>
                             </div>
                         </div>
 
@@ -482,39 +546,39 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-info"></i>
                             </span>
                                 <h4>
                                     <strong>Rent Property</strong>
                                 </h4>
                                 <p> Renting a property </p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <a href="#" class="btn btn-inverse">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-home fa-stack-1x text-primary"></i>
+                                <i class="fa fa-home fa-stack-1x text-info"></i>
                             </span>
                                 <h4>
                                     <strong>Buy Property</strong>
                                 </h4>
                                 <p> Buying a property. </p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <a href="#" class="btn btn-inverse">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-building-o fa-stack-1x text-primary"></i>
+                                <i class="fa fa-building-o fa-stack-1x text-info"></i>
                             </span>
                                 <h4>
                                     <strong>Sell Property</strong>
                                 </h4>
                                 <p> Want to sell a property ? </p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <a href="#" class="btn btn-inverse">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -586,7 +650,7 @@
                         </div>
                     </div>
                     <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Items</a>
+                    <a href="#" class="btn btn-info">View More Items</a>
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -601,8 +665,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h3>The properties below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Search More!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Join Venture!</a>
+                    <a href="#" class="btn btn-lg btn-inverse">Search More!</a>
+                    <a href="#" class="btn btn-lg btn-primary">Joint Venture!</a>
                 </div>
             </div>
         </div>
@@ -655,6 +719,14 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Material Design Javascript -->
+    <script src="js/materialdesign/material.min.js"></script>
+    <script src="js/materialdesign/ripples.min.js"></script>
+
+    <script>
+      $.material.init();
+    </script>
 
     <!-- Custom Theme JavaScript -->
     <script>
