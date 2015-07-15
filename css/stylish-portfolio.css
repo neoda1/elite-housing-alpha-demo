@@ -155,7 +155,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
+    background: url(../img/bg-1.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -270,4 +270,23 @@ footer {
 
 #carousel-example-generic{
     height:100%;
+}
+
+#map-canvas{
+    height:100%;
+    width: 100%;
+}
+#rent-tab-panel .tab-content{
+    padding-top:80px;
+}
+#rent-tab-panel .tabpane{
+    background-color: rgba(0,0,0,0.3);
+}
+.jv-plot, .jv-land{
+    background-image:url(../img/venture-bg.jpg);
+    background-size:200%;
+    background-repeat: no-repeat;
+}
+.jv-land{
+    background-position: 100% 0;
 }
